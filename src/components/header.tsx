@@ -38,8 +38,7 @@ const Header = (props: Props) => {
           </li>
         </ul>
         <button type="button" onClick={()=>{setState({type:'login'})}}>Login</button>
-        <button type="button" onClick={()=>{setState({type:'register'})}}>Register</button>
-        <button type="button" onClick={()=>{setState({type:'reset'})}}>Reset</button>
+        <button type="button" onClick={()=>{setState({type:'register'})}}>Register</button>    
       </div>
     </div>
   </nav>

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CountCT } from '../../layout/client'
 
 type Props = {}
 
 const Register = (props: Props) => {
+  const [state,setState] = useContext(CountCT) as any
   return (
     <>
-     <form>
+   <div className="bg-overlay">
+   <button type="button" onClick={()=>{setState({type:'close'})}}>Close</button>
+   <form>
   <div className="form-row">
     <div className="form-group col-md-6">
       <label>Email</label>
@@ -51,6 +55,7 @@ const Register = (props: Props) => {
   </div>
   <button type="submit" className="btn btn-primary">Sign in</button>
 </form>
+   </div>
     </>
   )
 }
